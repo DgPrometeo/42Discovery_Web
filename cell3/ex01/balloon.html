@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ballon{
+            margin-top: 4rem;
+            border-radius: 50%;         
+        }
+    </style>
+    <title>ballon</title>
+</head>
+<body>
+    
+    <div style="background: red; width: 200px;height: 200px;" class="ballon" id="ballon"></div>
+<script>
+ 
+ const ballon = document.getElementById("ballon");
+ let longitud = parseInt(ballon.style.width);
+ 
+    function changeColor(){
+
+    let colorActual = ballon.style.background;
+        switch(colorActual){
+            case "red":
+            ballon.style.background = "green";
+            break;
+
+            case "green":
+            ballon.style.background = "blue";
+            break
+
+            case "blue": 
+            ballon.style.background = "red";
+            break
+        }
+    }
+
+    function aumentoTamano(){
+      
+        longitud = longitud + 10;
+        let nuevalongitud = longitud.toString();
+        ballon.style.width = nuevalongitud + "px";
+        ballon.style.height = nuevalongitud + "px";
+        console.log(longitud);
+        if(longitud > 410) {
+            longitud = 190; 
+            ballon.style.background = "red"; 
+        }
+        
+    }
+    function reducirTamano(){
+
+        if(longitud > 210) {
+
+       longitud = longitud - 5;
+        let nuevalongitud = longitud.toString();
+        ballon.style.width = nuevalongitud + "px";
+        ballon.style.height = nuevalongitud + "px";
+
+    let colorActual = ballon.style.background;
+        switch(colorActual){
+            case "red":
+            ballon.style.background = "blue";
+            break;
+
+            case "green":
+            ballon.style.background = "red";
+            break
+
+            case "blue": 
+            ballon.style.background = "green";
+            break
+        }
+        }
+    }
+
+ballon.addEventListener("click",changeColor);
+ballon.addEventListener("click",aumentoTamano);
+ballon.addEventListener("mouseout",reducirTamano);
+    
+    
+</script>
+</body>
+
+</html>

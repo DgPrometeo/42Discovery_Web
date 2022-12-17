@@ -1,0 +1,26 @@
+body {
+    align-items: center; /*Estos tres elementos son para centrar el objeto en la pantalla de izq./der. */
+    display: flex;
+    justify-content: center;
+    height: 100vh;      /*El height y el width son necesarios para centrar de arriba/abajo el objeto. */
+    width: 100vw;       
+}
+
+
+#balloon {
+width: 200px;       
+height: 200px;
+-moz-border-radius: 50%;       /*para hacerlo redondo, es necesario ponerlos 50% ya que si los pones 100% no */
+-webkit-border-radius: 50%;
+background-color: red;
+border-radius: 50%;
+display: flex;              /*para que se encuentre centrado los tres elementos siguientes*/
+justify-content: center;
+align-items: center;
+cursor: pointer; /*para convertirlo en botón*/
+}
+
+
+
+
+
