@@ -1,0 +1,25 @@
+body {
+    font-family: 'Times New Roman';
+    text-align: center;
+    place-items: center; /*para centrar toda la estructura*/
+    border: 2px black solid;
+    position: absolute;
+    }
+
+.tabla {
+    margin: 0 auto; /*con esto, la tabla se colocará en el centro de la página izq./der.*/
+    text-align: center;
+    width: "300px"; 
+    height: "200px";
+    padding: 0%; /*con padding al 0% generas que el espacio desde el borde al objeto se reduzca al mínimo */
+}
+
+tr:last-child{ /*Aquí afectará únicamente a la última fila de toda la tabla*/
+    background-color: black;
+    color: white
+}
+
+.logos {
+    width: 30px;
+    height: 30px;
+}
