@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    font-family: fantasy;
+    text-align: center;
+    color: rgb(11, 150, 1);
+    
+}
+
+
+.parallax1{
+    height: 100vh;
+    background-image:url(https://spooniomweb.wpenginepowered.com/wp-content/uploads/42-825x510.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+
+.parallax2{
+    height: 100vh;
+    background-image:url(https://nikinowell.files.wordpress.com/2015/07/42cluster.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
